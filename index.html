@@ -21,12 +21,17 @@
 
 <body>
     <div class="container w-100 ">
-        <div class="row ml-5 mb-3">
-            <h3>BFS , DFS animation for directed graph</h3>
+        <div class="row ml-3 mb-4 text-center">
+            <div class="col">
+                <div class="card mt-3 text-center bg-light">
+                    <h3 class="text-primary">BFS , DFS animation for directed graph</h3>
+                    <h4 class="red-text">Priyanka Yadav , IIT BHILAI</h4>
+                </div>
+            </div>
         </div>
         <div class="row">
             <div class="col ml-4 mr-5 mt-4">
-                <div class="card ">
+                <div class="card bg-primary">
                     <div class="row">
 
                         <div class="col">
@@ -41,19 +46,19 @@
                         </div>
 
                         <div class="col mt-2">
-                            <button id='submit' onclick="runAlgorithm()">Run Algorithm</button>
+                            <button class="bg-success" id='submit' onclick="runAlgorithm()">Run Algorithm</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mt-2">
+            <div class="card mt-2 bg-primary">
                 <div class="row mt-2">
 
                     <div class="col mb-3">
                         <input type="number" name="numVert" placeholder="Number of Vertices" min=0 id="numVert">
                     </div>
                     <div class="col">
-                        <button onclick="Addnodes()">Add Nodes</button>
+                        <button class="bg-success" onclick="Addnodes()">Add Nodes</button>
                     </div>
                 </div>
                 <div class="row">
@@ -67,7 +72,7 @@
                         <input type="text" name="weight" id="weight" placeholder="Weight">
                     </div>
                     <div class="col s3 mb-3">
-                        <button onclick="Addedge()">Add Edge</button>
+                        <button class="bg-success" onclick="Addedge()">Add Edge</button>
                     </div>
                 </div>
 
@@ -76,7 +81,7 @@
                         <input type="text" name="ID" placeholder="From->To " id="ID">
                     </div>
                     <div class="col s3">
-                        <button onclick="remove()">Remove edge</button>
+                        <button class="bg-success" onclick="remove()">Remove edge</button>
                     </div>
                 </div>
             </div>
@@ -89,7 +94,7 @@
         </div>
     </div>
 
-    <script src="Animation.js"></script>
+    <script src="index.js"></script>
     <script src="queue.js"></script>
     <script src="stack.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
