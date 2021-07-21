@@ -21,7 +21,7 @@
 
 <body>
     <div class="container w-100 ">
-        <div class="row ml-1 text-center">
+        <div class="row text-center">
             <div class="col">
                 <div class="card mt-3 text-center bg-light">
                     <h3 class="text-primary">BFS , DFS animation for directed graph</h3>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col mr-5 mt-4">
+            <div class="col -4mr-5 mt-4">
                 <div class="card mt-3 bg-primary ">
                     <div class="row">
 
@@ -51,42 +51,42 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col"> -->
-            <div class="card mt-4 bg-primary">
-                <div class="row mt-2">
+            <div class="col-8">
+                <div class="card mt-4 bg-primary">
+                    <div class="row mt-2">
 
-                    <div class="col mb-3">
-                        <input type="number" name="numVert" placeholder="Number of Vertices" min=0 id="numVert">
+                        <div class="col mb-3">
+                            <input type="number" name="numVert" placeholder="Number of Vertices" min=0 id="numVert">
+                        </div>
+                        <div class="col">
+                            <button class="bg-success" onclick="Addnodes()">Add Nodes</button>
+                        </div>
                     </div>
-                    <div class="col">
-                        <button class="bg-success" onclick="Addnodes()">Add Nodes</button>
+                    <div class="row">
+                        <div class="col s3 mb-3">
+                            <input type="text" name="src_edge" placeholder="Start node " id="src_edge">
+                        </div>
+                        <div class="col s3 mb-3">
+                            <input type="text" name="trg_edge" placeholder="End node " id="trg_edge">
+                        </div>
+                        <div class="col s3">
+                            <input type="text" name="weight" id="weight" placeholder="Weight">
+                        </div>
+                        <div class="col s3 mb-3">
+                            <button class="bg-success" onclick="Addedge()">Add Edge</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col s3 mb-3">
-                        <input type="text" name="src_edge" placeholder="Start node " id="src_edge">
-                    </div>
-                    <div class="col s3 mb-3">
-                        <input type="text" name="trg_edge" placeholder="End node " id="trg_edge">
-                    </div>
-                    <div class="col s3">
-                        <input type="text" name="weight" id="weight" placeholder="Weight">
-                    </div>
-                    <div class="col s3 mb-3">
-                        <button class="bg-success" onclick="Addedge()">Add Edge</button>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col s3 mb-1">
-                        <input type="text" name="ID" placeholder="From->To " id="ID">
-                    </div>
-                    <div class="col s3">
-                        <button class="bg-success" onclick="remove()">Remove edge</button>
+                    <div class="row">
+                        <div class="col s3 mb-1">
+                            <input type="text" name="ID" placeholder="From->To " id="ID">
+                        </div>
+                        <div class="col s3">
+                            <button class="bg-success" onclick="remove()">Remove edge</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
         </div>
         <br>
         <br>
