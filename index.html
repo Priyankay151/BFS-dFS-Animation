@@ -1,0 +1,100 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Algo_Animation</title>
+    <script src="cytoscape.js"></script>
+</head>
+
+<style>
+    #cy {
+        width: 60%;
+        height: 50%;
+        position: absolute;
+        left: 20vw;
+    }
+</style>
+
+<body>
+    <div class="container w-100 ">
+        <div class="row ml-5 mb-3">
+            <h3>BFS , DFS animation for directed graph</h3>
+        </div>
+        <div class="row">
+            <div class="col ml-4 mr-5 mt-4">
+                <div class="card ">
+                    <div class="row">
+
+                        <div class="col">
+                            <select id='Algorithms'>
+                                <option value="BFS">Breadth First Search</option>
+                                <option value="DFS">Depth First Search</option>
+                            </select>
+                        </div>
+
+                        <div class="col mt-2">
+                            <input type="text" name="startIndex" id="startIndex" placeholder="Start vertex (Bydefault 0)">
+                        </div>
+
+                        <div class="col mt-2">
+                            <button id='submit' onclick="runAlgorithm()">Run Algorithm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <div class="row mt-2">
+
+                    <div class="col mb-3">
+                        <input type="number" name="numVert" placeholder="Number of Vertices" min=0 id="numVert">
+                    </div>
+                    <div class="col">
+                        <button onclick="Addnodes()">Add Nodes</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s3 mb-3">
+                        <input type="text" name="src_edge" placeholder="Start node " id="src_edge">
+                    </div>
+                    <div class="col s3 mb-3">
+                        <input type="text" name="trg_edge" placeholder="End node " id="trg_edge">
+                    </div>
+                    <div class="col s3">
+                        <input type="text" name="weight" id="weight" placeholder="Weight">
+                    </div>
+                    <div class="col s3 mb-3">
+                        <button onclick="Addedge()">Add Edge</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col s3 mb-1">
+                        <input type="text" name="ID" placeholder="From->To " id="ID">
+                    </div>
+                    <div class="col s3">
+                        <button onclick="remove()">Remove edge</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div clas="row">
+            <div id="cy">
+            </div>
+        </div>
+    </div>
+
+    <script src="Animation.js"></script>
+    <script src="queue.js"></script>
+    <script src="stack.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+</body>
+
+</html>
